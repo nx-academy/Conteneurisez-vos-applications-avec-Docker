@@ -1,0 +1,26 @@
+{
+  "name": "mooc-rating-application",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/next-level-run/MOOC-rating-application.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/next-level-run/MOOC-rating-application/issues"
+  },
+  "homepage": "https://github.com/next-level-run/MOOC-rating-application#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.4"
+  }
+}
