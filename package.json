@@ -4,6 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,9 +21,11 @@
   },
   "homepage": "https://github.com/next-level-run/MOOC-rating-application#readme",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "mongoose": "^4.13.7"
   },
   "devDependencies": {
+    "nodemon": "^1.9.1",
     "prettier": "^2.8.4"
   }
 }
