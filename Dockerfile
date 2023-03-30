@@ -1,6 +1,6 @@
 FROM node:12.22-buster-slim
 
-ADD . /app
-WORKDIR /app
+ADD . /api
+WORKDIR /api
 
-CMD [ "node", "app.js" ]
+# CMD [ "node", "app.js" ]
