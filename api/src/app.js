@@ -26,6 +26,8 @@ db.on("disconnected", function () {
   console.log("MongoDB: disconnected");
 });
 
+app.get("/", (req, res) => res.send("Hello, World!"))
+
 app.use("/api/v1/courses", courses);
 app.use("/api/v1/users", users);
 

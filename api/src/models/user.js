@@ -1,7 +1,7 @@
 "use strict";
 
-const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
+const mongoose = require("mongoose");
 const validator = require("validator");
 
 const UserSchema = new mongoose.Schema({
@@ -39,5 +39,5 @@ UserSchema.path("email").validate(function (email) {
 }, "Invalid email address");
 
 const User = mongoose.model("User", UserSchema);
-
 module.exports = User;
+
