@@ -8,7 +8,7 @@ const router = express.Router();
 const UserModel = require("../models/user");
 const auth = require("../middlewares/auth");
 
-router.get("/", function (req, res, next) {
+router.get("/", auth, function (req, res, next) {
   UserModel.find()
     .select("_id, username, email")
     .exec(function (error, users) {

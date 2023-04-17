@@ -12,7 +12,15 @@ function authorize(req, res, next) {
   const credentials = auth(req);
 
   if (credentials && credentials.name && credentials.pass) {
-    User.findOne({ emailAddress: credentials.name }).exec(function (err, user) {
+    User.findOne({ email: credentials.name }).exec(function (err, user) {
+
+      console.log("=====")
+      console.log(credentials)
+      console.log("=====")
+      console.log("=====")
+      console.log(user)
+      console.log("=====")
+
       if (err || !user) return next(unauthorized);
 
       bcrypt.compare(
