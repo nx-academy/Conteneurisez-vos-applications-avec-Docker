@@ -40,4 +40,3 @@ UserSchema.path("email").validate(function (email) {
 
 const User = mongoose.model("User", UserSchema);
 module.exports = User;
-

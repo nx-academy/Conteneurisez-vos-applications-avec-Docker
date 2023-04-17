@@ -1,29 +1,28 @@
-'use strict'
+"use strict";
 
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
-const User = require("./user")
+const User = require("./user");
 
 const ReviewSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.ObjectId,
-    ref: 'User'
+    ref: "User",
   },
   postedOn: {
     type: Date,
-    default: Date.now
+    default: Date.now,
   },
   rating: {
     type: Number,
     required: [true, "A course needs to have a rating"],
     min: 1,
-    max: 5
+    max: 5,
   },
   review: {
-    type: String
-  }
-})
+    type: String,
+  },
+});
 
-const Review = mongoose.model("Review", ReviewSchema)
-module.exports = Review
-
+const Review = mongoose.model("Review", ReviewSchema);
+module.exports = Review;
