@@ -6,7 +6,7 @@ const idx = require("idx");
 const router = express.Router();
 
 const UserModel = require("../models/user");
-const auth = require("../middlewares/auth")
+const auth = require("../middlewares/auth");
 
 router.get("/", function (req, res, next) {
   UserModel.find()
@@ -19,17 +19,14 @@ router.get("/", function (req, res, next) {
     });
 });
 
-
-router.get("/:userId", auth, function(req, res, next) {
-  User
-    .findOne({ _id: req.userId })
-    .select('-hashedPassword')
-    .exec(function(err, user) {
-      if (err) return next(err)
-      res.status(200).json({ data: [user] })
-    })
-})
-
+router.get("/:userId", auth, function (req, res, next) {
+  User.findOne({ _id: req.userId })
+    .select("-hashedPassword")
+    .exec(function (err, user) {
+      if (err) return next(err);
+      res.status(200).json({ data: [user] });
+    });
+});
 
 router.post("/", function (req, res, next) {
   const username = idx(req, (_) => _.body.username);

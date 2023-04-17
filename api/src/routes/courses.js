@@ -17,45 +17,45 @@ router.get("/", function (req, res, next) {
     });
 });
 
-router.get("/:id", function(req, res, next) {
-  Course
-    .findById(req.params.courseId)
+router.get("/:id", function (req, res, next) {
+  Course.findById(req.params.courseId)
     .populate({
-      path: 'user',
-      model: 'User'
+      path: "user",
+      model: "User",
     })
     .populate({
-      path: 'reviews',
-      model: 'Review',
+      path: "reviews",
+      model: "Review",
       populate: {
-        path: 'user',
-        model: 'User'
-      }
+        path: "user",
+        model: "User",
+      },
     })
-    .exec(function(err, course) {
+    .exec(function (err, course) {
       if (err) {
         res.status(404).json({
-          response: 'Not found',
-          error: err
-        })
+          response: "Not found",
+          error: err,
+        });
       } else {
-        res.status(200).json({ course: course })
+        res.status(200).json({ course: course });
       }
-    })
-})
+    });
+});
 
-router.post('/', function(req, res, next) {
-  const course = new Course(req.body)
-  course.save(function(error) {
+router.post("/", function (req, res, next) {
+  const course = new Course(req.body);
+  course.save(function (error) {
     if (error && error.name === "ValidationError") {
-
+      res.status(400).json({
+        res: error,
+      });
     } else if (error) {
-      return next(error)
+      return next(error);
     } else {
-      res.status(201).send()
+      res.status(201).send();
     }
-  })
-})
-
+  });
+});
 
 module.exports = router;
