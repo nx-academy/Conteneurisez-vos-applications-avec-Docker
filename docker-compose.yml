@@ -5,9 +5,14 @@ services:
     build: .
     stdin_open: true
     tty: true
-    volumes:
-      - ./:/api
     environment:
+      DB_URL: 'myUrl'
+      DB_NAME: 'mooc-db'
       PORT: 3000
+    env_file:
+      - ./.env
     ports:
       - 3000:3000
+    volumes:
+      - ./:/api
+
