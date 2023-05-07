@@ -2,7 +2,7 @@
 
 Bienvenue sur le code source du projet fil rouge **My MOOCs**. Ce projet a été réalisé en lien avec le cours **Conteneurisez vos applications avec Docker** sur Next Level.
 
-Ce cours ainsi que son projet fil rouge ont été écrits, développés et testés sur Mac et Windows. Ce projet est **open source**. Si vous avez une question, que vous avez trouvé une faute d'orthographe ou que quelque chose ne vous semble pas clair, nous vous invitons à ouvrir une [issue](https://github.com/next-level-run/curriculum/issues/new/choose).
+Ce cours ainsi que son projet fil rouge ont été écrits, développés et testés sur Mac et Windows. Ce projet est **open source**. Si vous avez une question, que vous avez trouvé une faute d'orthographe ou que quelque chose ne vous semble pas clair, nous vous invitons à ouvrir une [issue](https://github.com/next-level-run/my-MOOCs/issues/new).
 
 ## Prérequis
 
