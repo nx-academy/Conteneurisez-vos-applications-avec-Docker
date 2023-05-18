@@ -6,7 +6,7 @@ Ce cours ainsi que son projet fil rouge ont été écrits, développés et test�
 
 ## Prérequis
 
-- [Visual Studio Code](https://code.visualstudio.com/) : Visual Studio Code est notre éditeur de texte durant tout le cours. Pour l'installer, veuillez vous referez au chapitre 2 de la partie 1 du cours. Vous verrez comment installer VSCode sur Mac et Windows.
+- [Visual Studio Code](https://code.visualstudio.com/) : Visual Studio Code est notre éditeur de texte durant tout le cours. Pour l'installer, veuillez vous referez au [chapitre 2 de la partie 1 du cours](https://next-level22.teachable.com/courses/conteneurisez-vos-applications-avec-docker/lectures/46735051). Vous verrez comment installer VSCode sur Mac et Windows.
 - [Docker](https://www.docker.com/) : vous n'avez pas besoin d'installer Docker avant de commencer le cours. Vous verrez pas-à-pas comment l'installer et l'utiliser sur votre ordinateur.
 
 
