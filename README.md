@@ -14,7 +14,7 @@ Ce cours ainsi que son projet fil rouge ont été écrits, développés et test�
 
 ### Avec GitHub Desktop
 
-Ouvrez GitHub Desktop et cliquez sur le bouton **Clone Repository**. Une fois, la modale ouverte, cliquez sur l'onglet URL. Renseignez ensuite le nom de votre repository et le répertoire d'installation. Nous vous montrons ces étapes dans le chapitre 3 de la partie 1 du cours
+Ouvrez GitHub Desktop et cliquez sur le bouton **Clone Repository**. Une fois, la modale ouverte, cliquez sur l'onglet URL. Renseignez ensuite le nom de votre repository et le répertoire d'installation. Nous vous montrons ces étapes dans le [chapitre 3 de la partie 1 du cours](https://next-level22.teachable.com/courses/conteneurisez-vos-applications-avec-docker/lectures/46735288)
 
 <img src="./github-desktop.png" alt="Cloner une repository depuis GitHub Desktop" />
 
