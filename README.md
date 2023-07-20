@@ -1,8 +1,8 @@
-# My MOOCs
+# Conteneurisez vos applications avec Docker
 
-Bienvenue sur le code source du projet fil rouge **My MOOCs**. Ce projet a été réalisé en lien avec le cours **Conteneurisez vos applications avec Docker** sur Next Level.
+Bienvenue sur le code source du projet fil rouge **My MOOCs**. Ce projet a été réalisé en lien avec le cours **Conteneurisez vos applications avec Docker** sur [NX](https://nx.academy).
 
-Ce cours ainsi que son projet fil rouge ont été écrits, développés et testés sur Mac et Windows. Ce projet est **open source**. Si vous avez une question, que vous avez trouvé une faute d'orthographe ou que quelque chose ne vous semble pas clair, nous vous invitons à ouvrir une [issue](https://github.com/next-level-run/my-MOOCs/issues/new).
+Ce cours ainsi que son projet fil rouge ont été écrits, développés et testés sur Mac et Windows. Ce projet est **open source**. Si vous avez une question, que vous avez trouvé une faute d'orthographe ou que quelque chose ne vous semble pas clair, nous vous invitons à ouvrir une [issue](https://github.com/nx-academy/Conteneurisez-vos-applications-avec-Docker/issues/new).
 
 ## Prérequis
 
@@ -24,12 +24,12 @@ Pour récupérer ce projet, vous pouvez simplement réaliser un `git clone` :
 
 - Via SSH
 ```
-git@github.com:next-level-run/my-MOOCs.git
+git@github.com:nx-academy/Conteneurisez-vos-applications-avec-Docker.git
 ```
 
 - Via HTTPS
 ```
-https://github.com/next-level-run/my-MOOCs.git
+https://github.com/nx-academy/Conteneurisez-vos-applications-avec-Docker.git
 ```
 
 ## Informations complémentaires:
