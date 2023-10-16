@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     function getGreetings() {
-      return fetch(`http://localhost:3000/greetings`)
+      return fetch(`${API_URL}/greetings`)
         .then(data => data.json())
         .then(data => setGreetings(data.greetings))
         .catch(err => console.log('An error occured', err))

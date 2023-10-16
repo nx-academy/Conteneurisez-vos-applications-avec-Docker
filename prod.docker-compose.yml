@@ -4,16 +4,18 @@ services:
   web:
     build:
       context: web
-      target: base
+      target: prod
     depends_on:
       - database
+    environment:
+      REACT_APP_API_URL: "http://localhost:3000"
     ports:
-      - 3005:3000
+      - 80:80
 
   api:
     build:
       context: api
-      target: base
+      target: prod
     depends_on:
       - database
     environment:
@@ -27,7 +29,6 @@ services:
       - ./.env
     ports:
       - 3000:3000
-      - 3010:3010
 
   database:
     image: mongo:3.7.9

@@ -39,3 +39,6 @@ https://github.com/next-level-run/my-MOOCs.git
 - `partie-2/chapitre-2-exercice` - (**optionnel**) correspond à la branche d'activité
 - `partie-2/chapitre-2-fin` - correspond à la branche de fin de chapitre.
 
+
+
+http://localhost:3000/greetings
