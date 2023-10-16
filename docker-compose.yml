@@ -5,6 +5,8 @@ services:
     build: web
     depends_on:
       - database
+    environment:
+      REACT_APP_API_URL: "localhost:3000"
     ports:
       - 3005:3000
 

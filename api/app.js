@@ -1,7 +1,9 @@
+const cors = require('cors')
 const express = require('express')
 const mongoose = require('mongoose')
 
 const app = express()
+app.use(cors())
 
 const PORT = process.env.PORT || 3000
 const DB_URL = process.env.ME_CONFIG_MONGODB_URL
@@ -24,6 +26,12 @@ db.on("disconnected", function () {
 
 app.get('/', (req, res) => {
   res.send("Hello, world!")
+})
+
+app.get("/greetings", (req, res) => {
+  res.json({
+    "greetings": "Thomas"
+  })
 })
 
 
