@@ -1,4 +1,4 @@
-FROM node:18.18-buster-slim
+FROM node:12.22-buster-slim
 
 ADD . /web
 WORKDIR /web

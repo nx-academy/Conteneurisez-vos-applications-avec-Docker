@@ -23,7 +23,6 @@ services:
       - ./.env
     ports:
       - 3000:3000
-      - 3005:3005
 
   database:
     image: mongo:3.7.9
@@ -32,3 +31,4 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
+
