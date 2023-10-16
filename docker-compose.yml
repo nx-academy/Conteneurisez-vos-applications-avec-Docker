@@ -1,10 +1,15 @@
 version: "3"
 
 services:
+  web:
+    build: web
+    depends_on:
+      - database
+    ports:
+      - 3005:3000
+
   api:
     build: api
-    stdin_open: true
-    tty: true
     depends_on:
       - database
     environment:
@@ -15,9 +20,10 @@ services:
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
       ME_CONFIG_MONGODB_URL: mongodb://root:example@database:27017
     env_file:
-      - ./api/.env
+      - ./.env
     ports:
       - 3000:3000
+
   database:
     image: mongo:3.7.9
     ports:
