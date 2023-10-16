@@ -2,7 +2,7 @@ version: "3"
 
 services:
   api:
-    build: .
+    build: api
     stdin_open: true
     tty: true
     depends_on:
@@ -15,7 +15,7 @@ services:
       ME_CONFIG_MONGODB_ADMINPASSWORD: example
       ME_CONFIG_MONGODB_URL: mongodb://root:example@database:27017
     env_file:
-      - ./.env
+      - ./api/.env
     ports:
       - 3000:3000
   database:
@@ -25,4 +25,3 @@ services:
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
-
