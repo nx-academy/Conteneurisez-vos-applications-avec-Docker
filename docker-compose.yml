@@ -2,18 +2,14 @@ version: "3"
 
 services:
   web:
-    build:
-      context: web
-      target: base
+    build: web
     depends_on:
       - database
     ports:
       - 3005:3000
 
   api:
-    build:
-      context: api
-      target: base
+    build: api
     depends_on:
       - database
     environment:
