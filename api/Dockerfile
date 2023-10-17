@@ -1,6 +1,7 @@
 FROM node:12.22-buster-slim AS base
 WORKDIR /api
 COPY package*.json ./
+RUN npm ci
 COPY . .
 
 FROM base AS build
