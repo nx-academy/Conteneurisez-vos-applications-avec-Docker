@@ -5,7 +5,8 @@ COPY . .
 
 
 FROM base AS build
-COPY --from=base . /home/node/api
+COPY --from=base ./api /home/node/api
+WORKDIR /home/node/api
 RUN npm i --production
 
 

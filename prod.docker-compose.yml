@@ -13,8 +13,6 @@ services:
       - 80:80
 
   api:
-    tty: true
-    stdin_open: true
     build:
       context: api
       target: prod
