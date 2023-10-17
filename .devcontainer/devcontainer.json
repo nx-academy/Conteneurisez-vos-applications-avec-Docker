@@ -36,7 +36,7 @@
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
-			"extensions": ["ue.alphabetical-sorter"]
+			"extensions": ["ue.alphabetical-sorter", "esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
 		}
 	}
 
